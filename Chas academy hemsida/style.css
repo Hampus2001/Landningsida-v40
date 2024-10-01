@@ -1,0 +1,365 @@
+.topgrid {
+  margin: -8px;
+  display: grid;
+  grid-template-areas: "logo space nav1 nav2 nav3 nav4 nav5 nav6";
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  background-image: url(./images/chasHero.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1050px;
+}
+.chaslogo {
+  grid-area: logo;
+  grid-column: span 1;
+  height: 95px;
+  width: auto;
+  margin-left: 75px;
+  margin-top: -70px;
+  cursor: pointer;
+}
+.gridspace {
+  width: 30px;
+  grid-area: space;
+  grid-column: span 5;
+}
+.text {
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+  font-family: fira sans condensed;
+  margin-bottom: 80px;
+  cursor: default;
+}
+.nav1 {
+  grid-area: nav1;
+  grid-column: span 1;
+}
+.nav2 {
+  grid-area: nav2;
+  grid-column: span 1;
+}
+.nav3 {
+  grid-area: nav3;
+  grid-column: span 1;
+}
+.nav4 {
+  grid-area: nav4;
+  grid-column: span 1;
+}
+.nav5 {
+  grid-area: nav5;
+  grid-column: span 1;
+}
+.nav6 {
+  grid-area: nav6;
+  grid-column: span 1;
+  background-color: rgb(76 100 255);
+  height: 40px;
+  padding: 15px 35px 0px 35px;
+  text-align: center;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+}
+.hero {
+  margin-top: 80px;
+  font-family: fira sans condensed;
+  text-transform: uppercase;
+  font-size: 100px;
+  color: white;
+  grid-column: span 12;
+  grid-row: span 2;
+  width: 850px;
+  font-weight: 500;
+  cursor: default;
+  margin-top: 160px;
+}
+.topinfo {
+  margin-top: 100px;
+  font-stretch: expanded;
+  font-family: fira sans condensed;
+  font-size: 22px;
+  text-transform: uppercase;
+  grid-column: span 12;
+  grid-row: span 1;
+  color: white;
+  width: 400px;
+  font-weight: 600;
+  cursor: default;
+}
+.cta {
+  font-family: fira sans condensed;
+  color: white;
+  align-content: center;
+  font-size: 30px;
+  grid-column: span 12;
+  grid-row: span 1;
+  height: 80px;
+  width: 180px;
+  border-radius: 30px;
+  background-color: rgb(76 100 255);
+  margin-top: -100px;
+  cursor: pointer;
+}
+
+.midgrid {
+  margin: -8px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "img img img img img img h3 h3 h3 h3 h3 h3"
+    "img img img img img img h2 h2 h2 h2 h2 h2"
+    "img img img img img img sell sell sell sell sell sell"
+    "img img img img img img sell sell sell sell sell sell"
+    "img img img img img img apl apl apl read read read";
+  height: 800px;
+  width: auto;
+  background-color: rgb(245, 245, 245);
+  background-size: cover;
+  background-repeat: no-repeat;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 120px 160px 80px 230px;
+}
+.fontmid {
+  font-family: fira sans condensed;
+}
+.student {
+  height: 800px;
+  width: auto;
+  grid-column: span 6;
+  grid-row: span 5;
+  grid-area: img;
+  cursor: default;
+}
+.gettoknow {
+  grid-column: span 3;
+  align-content: end;
+  font-size: 25px;
+  font-weight: 500;
+  grid-area: h3;
+  cursor: default;
+}
+.header {
+  grid-column: span 3;
+  font-size: 60px;
+  grid-area: h2;
+  margin: 0px;
+  height: 70px;
+  cursor: default;
+}
+.selling {
+  grid-column: span 6;
+  grid-row: span 2;
+  grid-area: sell;
+  letter-spacing: normal;
+  line-height: 150%;
+  height: 300px;
+  font-size: 25px;
+  margin-top: -70px;
+  cursor: default;
+}
+.applynow {
+  grid-column: span 3;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 20px;
+  width: 200px;
+  height: 40px;
+  border-radius: 400px;
+  color: white;
+  background-color: black;
+  border: solid 1px black;
+  grid-area: apl;
+  margin-top: -120px;
+  cursor: pointer;
+}
+
+.readmore {
+  grid-column: span 3;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 20px;
+  width: 200px;
+  height: 40px;
+  border-radius: 400px;
+  border: solid 1px black;
+  grid-area: read;
+  margin-top: -120px;
+  margin-left: -250px;
+  cursor: pointer;
+}
+
+.reviewsgrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    " header header header header header header"
+    " photo1 photo1 photo2 photo2 photo3 photo3"
+    " review1 review1 review2 review2 review3 review3"
+    "name1 name1 name2 name2 name3 name3";
+  height: 1000px;
+  column-gap: 30px;
+  row-gap: 30px;
+  padding: 0px 200px 300px 200px;
+  justify-items: center;
+}
+.reviewsheader {
+  grid-area: header;
+  font-family: fira sans condensed;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 150px;
+}
+.reviewphotosize {
+  height: 450px;
+  width: auto;
+}
+.reviewphoto1 {
+  grid-area: photo1;
+}
+.reviewphoto2 {
+  grid-area: photo2;
+}
+.reviewphoto3 {
+  grid-area: photo3;
+}
+.reviewfont {
+  font-family: fira sans condensed;
+  font-size: 25px;
+  text-align: start;
+  grid-column: span 2;
+  letter-spacing: normal;
+  line-height: 150%;
+}
+.firstreview {
+  grid-area: review1;
+}
+.secondreview {
+  grid-area: review2;
+}
+.thirdreview {
+  grid-area: review3;
+}
+.firstreviewname {
+  grid-area: name1;
+  align-items: center;
+  font-family: fira sans condensed;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  grid-column: span 2;
+}
+.secondreviewname {
+  grid-area: name2;
+  align-items: center;
+  font-family: fira sans condensed;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  grid-column: span 2;
+}
+.thirdreviewname {
+  grid-area: name3;
+  align-items: center;
+  text-align: start;
+  font-family: fira sans condensed;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  grid-column: span 2;
+}
+
+.ctagrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns:
+    "ctaheader ctaheader ctaheader"
+    "ctainfo ctainfo ctainfo"
+    "cta2 cta2 cta2";
+  height: 600px;
+  width: auto;
+  background-color: rgb(245, 245, 245);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -8px;
+  justify-items: center;
+}
+.ctaheader {
+  grid-area: ctaheader;
+  grid-column: span 3;
+  grid-row: span 1;
+  font-size: 80px;
+  align-content: end;
+  margin-bottom: -30px;
+}
+.ctainfo {
+  grid-area: ctainfo;
+  grid-column: span 3;
+  grid-row: span 1;
+  font-size: 30px;
+  font-weight: 600;
+  align-content: center;
+  margin-top: -10px;
+}
+.cta2 {
+  grid-area: cta2;
+  grid-column: span 3;
+  grid-row: span 1;
+  color: white;
+  align-content: center;
+  font-size: 30px;
+  height: 80px;
+  width: 180px;
+  border-radius: 30px;
+  background-color: rgb(76 100 255);
+  cursor: pointer;
+  text-align: center;
+  margin-top: -40px;
+}
+
+.footerflex {
+  display: flex;
+  height: 500px;
+  width: auto;
+  justify-content: center;
+  align-items: start;
+  justify-content: space-evenly;
+  row-gap: 10px;
+  padding-top: 150px;
+}
+
+.footerlist1 {
+  font-family: fira sans condensed;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: -30px;
+  line-height: 0px;
+  cursor: pointer;
+}
+.footerlist2 {
+  font-family: fira sans condensed;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: -30px;
+  line-height: 10px;
+  cursor: pointer;
+}
+.chaslogofooter {
+  height: 300px;
+  width: auto;
+  cursor: pointer;
+}
